@@ -148,7 +148,7 @@ h1 {
 }
 
 /* Выпадающее меню (мобильное) */
-.dropdown-menu {
+/* .dropdown-menu {
     position: absolute;
     top: 50px;
     right: 0;
@@ -160,6 +160,28 @@ h1 {
     transform-origin: top right;
     transition: transform 0.2s ease-in-out;
     opacity: 0;
+} */
+
+.dropdown-menu {
+    position: absolute;
+    top: 50px;
+    /* Убедись, что меню не налазит на кнопку */
+    right: 0;
+    background-color: white;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(0);
+    transform-origin: top right;
+    transition: transform 0.2s ease-in-out;
+    opacity: 0;
+    z-index: 1000;
+    /* Поднимаем меню выше всех элементов */
+}
+
+.dropdown-menu.open {
+    transform: scale(1);
+    opacity: 1;
 }
 
 .dropdown-menu.open {
