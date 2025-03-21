@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hikes</title>
+    <link rel="stylesheet" href="css/css_port.css">
+    <link rel="stylesheet" href="css/css_port_trips.css">
+</head>
+
+<body>
+    <!-- Панель навигации (для экранов > 998px) -->
+    <nav class="navbar">
+        <ul>
+            <li style="float:left"><a href="index.html">Home</a></li>
+            <li><a href="fotogallery.html">Fotogallery</a></li>
+            <li><a href="trips.html">Hikes</a></li>
+        </ul>
+    </nav>
+
+    <!-- Контейнер для мобильного меню -->
+    <div class="menu-container">
+        <button class="menu-button" id="menuButton">
+            <span></span>
+        </button>
+
+        <div class="dropdown-menu" id="dropdownMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trips.html">Hikes</a></li>
+                <li><a href="fotogallery.html">Fotogallery</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header>
+        <h1 id="top">Hikes</h1>
+    </header>
+    <main>
+
+        <div class="grid1">
+
+            <div class="carousel-container">
+                <div class="carousel" id="carousel">
+                    <img tabindex="0" src="images/3cime_1.jpg" alt="Three Peaks of Lavaredo">
+                    <img tabindex="0" src="images/lussari.jpeg" alt="Mount Lussari">
+                    <img tabindex="0" src="images/ghedina_1.jpg" alt="Ghedina Lake">
+                    <img tabindex="0" src="images/coldai.jpeg" alt="Coldai Lake">
+                    <img tabindex="0" src="images/sorapis.jpeg" alt="Sorapis Lake">
+                    <img tabindex="0" src="images/tolazzi.jpeg" alt="Tolazzi Refuge">
+                </div>
+                <div class="buttons">
+                    <button id="prev">&#10094;</button>
+                    <button id="next">&#10095;</button>
+                </div>
+            </div>
+            <ul class="hike-list">
+                <li class="hike-item">
+                    <h2>Passo Giau, Averau, Nuvolau, 5 Torri</h2>
+                    <p>Embarking on the Passo Giau, Averau, Nuvolau, and Cinque Torri hike is like stepping into
+                        a living postcard—except with more sweat and fewer postage stamps. This loop trail offers a delightful blend
+                        of jaw-dropping vistas, historical intrigue, and just the right amount of calf-burning elevation to remind
+                        you
+                        why you skipped leg day at the gym.</p>
+                    <a href="Giau.html" class="read-more">Read more →</a>
+                </li>
+                <li class="hike-item">
+                    <h2>Cant del Gal to Rifugio Pradidali</h2>
+                    <p>Setting off on the Cant del Gal to Rifugio Pradidali hike is like auditioning for a role in a mountain
+                        adventure
+                        film—minus the stunt doubles and with a lot more huffing and puffing. This trail offers a delightful mix of
+                        serene forests, challenging ascents, and panoramic vistas that make every drop of
+                        sweat worth it.</p>
+                    <a href="pradidali.html" class="read-more">Read more →</a>
+                </li>
+                <li class="hike-item">
+                    <h2>Campanile di Val Montanaia from Rifugio Pordenone</h2>
+                    <p>Taking on the Campanile di Val Montanaia hike from Rifugio Pordenone is like stepping into a natural
+                        amphitheater
+                        where the mountains are the performers, and you're the captivated audience—albeit one that's slightly out of
+                        breath.
+                        This trail offers a blend of challenging ascents, breathtaking vistas, and a touch of geological whimsy that
+                        makes every
+                        hiker question their sanity in the best possible way.</p>
+                    <a href="campanile.html" class="read-more">Read more →</a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        copyright by Olena Kutsenko
+    </footer>
+    <script src="js/js_port.js"></script>
+</body>
+
+
+</html>

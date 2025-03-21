@@ -1,0 +1,251 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    padding: 5px;
+    margin: 15px;
+    background-color: #f4f4f4;
+    font-size: 25px;
+    text-align: justify;
+    line-height: 1.5em
+}
+
+footer {
+    margin-top: 3%;
+    font-size: 0.5em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.95em;
+}
+.grid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-content: center;
+    margin: 5%;
+    row-gap: 10px;
+}
+
+.grid1 figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+
+}
+.grid1 figure figcaption {
+    text-align: center;
+    align-items: center;
+    font-size: 0.8em;
+}
+.grid1 figure img {
+    border: 5px solid lightgrey;
+    border-radius: 35px;
+    width: 98%;
+    height: auto;
+    object-fit: cover;
+}
+/* Верхняя панель навигации */
+.navbar {
+    display: none;
+    /* По умолчанию скрыто, отображается при больших экранах */
+    background-color: #525252;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar ul li {
+    margin: 0 40px;
+    float: right;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #000000;
+}
+
+/* Контейнер меню (мобильное) */
+.menu-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    position: relative;
+}
+
+/* Кнопка меню */
+.menu-button {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Полоски внутри кнопки */
+.menu-button span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    position: relative;
+    transition: 0.3s;
+}
+
+.menu-button span::before,
+.menu-button span::after {
+    content: "";
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    transition: 0.3s;
+}
+
+.menu-button span::before {
+    top: -8px;
+}
+
+.menu-button span::after {
+    top: 8px;
+}
+
+/* Анимация кнопки при открытии */
+.menu-button.open span {
+    background: transparent;
+}
+
+.menu-button.open span::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.menu-button.open span::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+/* Выпадающее меню (мобильное) */
+.dropdown-menu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(0);
+    transform-origin: top right;
+    transition: transform 0.2s ease-in-out;
+    opacity: 0;
+}
+
+.dropdown-menu.open {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu ul li {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-menu ul li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.dropdown-menu ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+/* Медиа-запрос для больших экранов (больше 998px) */
+@media (min-width: 998px) {
+    .menu-container {
+        display: none;
+        /* Скрываем кнопку меню */
+    }
+
+    .navbar {
+        display: block;
+        /* Показываем панель навигации */
+    }
+    .grid1 {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: auto auto auto;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        max-width: 80vw;
+        margin: 0 auto;
+    }
+
+    /* Первый абзац на всю ширину */
+    .item1 {
+        grid-column: span 2;
+        text-align: justify;
+    }
+
+    /* Картинка слева */
+    .item3 {
+        grid-column: 1 / 2;
+        justify-self: left;
+        max-width: 300px;
+
+    }
+
+    .item3 img {
+        max-width: 300px;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    /* Абзацы справа от картинки */
+    .item2 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    /* Последний абзац на всю ширину */
+    .item5 {
+        grid-column: span 2;
+        text-align: justify;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotogallery</title>
+    <link rel="stylesheet" href="css/css_port.css">
+    <link rel="stylesheet" href="css/css_gallery.css">
+</head>
+
+<body>
+    <!-- Панель навигации (для экранов > 998px) -->
+    <nav class="navbar">
+        <ul>
+            <li style="float:left"><a href="index.html">Home</a></li>
+            <li><a href="fotogallery.html">Fotogallery</a></li>
+            <li><a href="trips.html">Hikes</a></li>
+        </ul>
+    </nav>
+
+    <!-- Контейнер для мобильного меню -->
+    <div class="menu-container">
+        <button class="menu-button" id="menuButton">
+            <span></span>
+        </button>
+
+        <div class="dropdown-menu" id="dropdownMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trips.html">Hikes</a></li>
+                <li><a href="fotogallery.html">Fotogallery</a></li>
+            </ul>
+        </div>
+    </div>
+    <main>
+    <div id="image" tabindex="0">
+        Hover over an image below to display here.
+    </div>
+    <div class="flex_foto">
+        <img class="preview" alt="Coldai Lake"
+            src="images/coldai.jpeg"
+            onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="The Giau Pass"
+            src="images/Giau.jpeg"
+            onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()" >
+        <img  class="preview" alt="Mount Lussary"
+            src="images/lussari.jpeg"
+            onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img  class="preview" alt="Pradidali Refuge"
+            src="images/pradidali.jpeg"
+            onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Sorapis Lake"
+            src="images/sorapis.jpeg"
+            onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img  class="preview" alt="Tolazzi Refuge"
+            src="images/tolazzi.jpeg"
+            onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Three Peaks of Lavaredo" src="images/3cime_1.jpg" onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Cinque Torri" src="images/5torri_1.jpg" onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="The Campanile" src="images/campanile_1.jpg" onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Fontanone di Goriuda" src="images/cascate.jpg" onmouseover="upDate(this)"
+            onfocus="upDate(this)" onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Creste di San Gualberto" src="images/claut_2.jpg" onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Toffana di Mezzo" src="images/tofane_1.jpg" onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Coldai Lake" src="images/coldai_1.jpg" onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Col de la Bernina" src="images/livigno_1.jpg" onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Dolomiti Mounts" src="images/lagazuoi_2.jpg" onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Sorapis Lake" src="images/sorapis_1.jpg" onmouseover="upDate(this)"
+            onfocus="upDate(this)" onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Pelmp Mount" src="images/pelmo_1.jpg" onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Piancavallo Mount" src="images/pianca_1.jpg" onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Innsbruck" src="images/insbruk_1.jpg" onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Sauris Lake" src="images/sauris_1.jpg" onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Three Peaks of Lavaredo" src="images/3cime_2.jpg" onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Claut" src="images/claut_2.jpg" onmouseover="upDate(this)"
+            onfocus="upDate(this)" onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Col de la Berninae" src="images/livigno_2.jpg" onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Piancavallo Mount" src="images/pianca_2.jpg" onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Coldai Lake" src="images/coldai_2.jpg" onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Toffana di Mezzo" src="images/tofane2.jpg" onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Mount Lagazuoi" src="images/lagazuoi_3.jpg" onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Nuvolau Refuge" src="images/nuvolau_2.jpg" onmouseover="upDate(this)"
+            onfocus="upDate(this)" onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Fusine Lake" src="images/fusine_1.jpg" onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Dolomiti Mounts" src="images/dolomiti_1.jpg" onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Dolomiti Mounts" src="images/dolomiti_2.jpg" onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Dolomiti Mounts" src="images/dolomiti_3.jpg" onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Mount Lagazuoi" src="images/lagazuoi_3.jpg" onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Fontanone di Goriuda" src="images/goriuda_1.jpg" onmouseover="upDate(this)"
+            onfocus="upDate(this)" onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Mount Lagazuoi" src="images/lagazuoi_5.jpg" onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+        <img class="preview" alt="Mount Lagazuoi" src="images/lagazuoi_6.jpg" onmouseover="upDate(this)" onfocus="upDate(this)"
+            onmouseout="unDo()" onblur="unDo()">
+    </div>
+<script src="js/js_gallery.js"></script>
+</main>
+<footer>
+    copyright by Olena Kutsenko
+</footer>
+</body>
+</html>
